@@ -1,0 +1,65 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Health Alert</string>
+
+    <string name="name_hint"><font size="12">Name</font></string>
+
+    <string name="tnc">I agree with the <b>Terms and Conditions</b> and <b>Privacy Policy</b></string>
+
+    <string name="account_balance">admin@gmail.com</string>
+    <string name="balance_amount">AHMED</string>
+    <string name="appointment_des"><b>Description: </b> Dear <b>Mr Ahmad</b>, your reminder set for Your Appointment Book for <b>Dr Ahmad</b> on <b>14 Aug 2021</b> at <b>09:30 am</b></string>
+    <string name="schedule_des"><b>Description: </b> Dear <b>Mr Ahmad</b>, your Scheduale set for Your Medicine Schedule for <b>Dr Ahmad</b></string>
+    <string name="vital_des"><b>Description: </b> Dear <b>Mr Ahmad</b>, your Daily Health set is this : Please take care of Your Health so you can spend a good life</string>
+
+
+    <string-array name="search_array">
+        <item>Appoinntments</item>
+        <item>Schedules</item>
+        <item>Health Vitals</item>
+    </string-array>
+
+    <string name="appointment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos dolore doloremque eos error ex facere fugiat officiis quos ullam! Ad aliquam aperiam architecto at consectetur deleniti distinctio dolore explicabo, impedit in labore molestiae numquam odio officia omnis placeat quasi quis quo recusandae rem sapiente sint unde veritatis. Aliquid, incidunt.</string>
+    <string-array name="vital_array">
+        <item>Blood Pressure</item>
+        <item>Glucose Level</item>
+        <item>Weight</item>
+    </string-array>
+
+    <string-array name="schedule_array">
+        <item>Liquid</item>
+        <item>Tablet</item>
+        <item>Capsules</item>
+        <item>Drops</item>
+        <item>Injections</item>
+    </string-array>
+
+    <string-array name="ld_activityScreenTitles">
+        <item>Dashboard</item>
+        <item>Appointment</item>
+        <item>Schedule Dosage</item>
+        <item>Health Vitals</item>
+        <item>Search</item>
+        <item>Feedback</item>
+        <item>Help</item>
+        <item>Setting</item>
+    </string-array>
+
+    <array name="ld_activityScreenIcons">
+        <item>@drawable/ic_home_outline</item>
+        <item>@drawable/ic_appoinment</item>
+        <item>@drawable/ic_clock_black</item>
+        <item>@drawable/ic_vital</item>
+        <item>@drawable/ic_search</item>
+        <item>@drawable/ic_feedbackk</item>
+        <item>@drawable/ic_help</item>
+        <item>@drawable/ic_settings</item>
+    </array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="case_history">A 12-year-old girl with a history of asthma presented to the emergency department with a three-day history of increased work of breathing, cough and wheezing. </string>
+
+    <string name="supportmsg"> the youth counselor guiding art projects and giving young people a creative outlet; the overnight staffer calming a young person who’s worried about a friend; the meal coordinator making sure young people are well-fed and healthy in the midst of a crisis that puts them even more at risk.</string>
+
+</resources>

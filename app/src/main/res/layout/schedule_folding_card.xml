@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="15dp"
+    android:layout_height="wrap_content"
+    android:clickable="false">
+
+    <com.ramotion.foldingcell.FoldingCell
+        android:id="@+id/sche_folding_cell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:clipChildren="false">
+
+        <FrameLayout
+            android:id="@+id/cell_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
+            android:elevation="5dp"
+            android:visibility="gone">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:src="@drawable/capsule"
+                                android:scaleType="fitXY"
+                                />
+
+
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="10dp"
+                                android:layout_marginTop="10dp"
+                                >
+
+                                <TextView
+                                    android:id="@+id/medName1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Vitamine V-400"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <!--<TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:drawableLeft="@drawable/ic_dot_24"
+                                    android:ellipsize="marquee"
+                                    android:singleLine="true"
+                                    android:text=" Disease "
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />-->
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Medicine Category: "
+                                    android:textSize="12sp"
+                                    android:textColor="@color/textColor"
+                                    android:textStyle="bold"
+                                    />
+                                <TextView
+                                    android:id="@+id/medCat"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Capsule"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/black"
+                                    />
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" Start Date: "
+                                    android:textSize="12sp"
+                                    android:drawableLeft="@drawable/ic_baseline_date_range_24"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/textColor"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/sdate1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" 10 May"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/textColor"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="|"
+                                    android:textStyle="bold"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" End Date: "
+                                    android:textSize="12sp"
+                                    android:drawableLeft="@drawable/ic_baseline_date_range_24"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/textColor"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/edate1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" 20 May"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/textColor"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" Repeat Time: "
+                                    android:textSize="12sp"
+                                    android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/textColor"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/rtime1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" 3 Times per day"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/textColor"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="|"
+                                    android:textStyle="bold"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" Gape Time: "
+                                    android:textSize="12sp"
+                                    android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/textColor"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/gapetime1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" 6 Hours"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/textColor"
+                                    />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/sdec"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/schedule_des"
+                                android:textSize="12sp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:textColor="#7B7B7B"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="end"
+                                android:layout_marginRight="10dp">
+
+                                <ImageView
+                                    android:id="@+id/editSch"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_edit"
+                                    android:layout_marginRight="20dp"/>
+
+                                <ImageView
+                                    android:id="@+id/deleteSch"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_delete"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/cell_title_view"
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="100dp"
+            android:elevation="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:paddingLeft="10dp"
+                        android:orientation="horizontal"
+                        >
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="10dp"
+                            >
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/capsule"
+                                android:scaleType="fitXY"
+                                />
+
+
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/medName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Vitamine V-400"
+                                android:textStyle="bold"
+                                android:textSize="18sp"
+                                android:textColor="@color/black"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" Start Date:"
+                                    android:textSize="12sp"
+                                    android:drawableLeft="@drawable/ic_baseline_date_range_24"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/textColor"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/sdate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="10 May "
+                                    android:textSize="12sp"
+                                    android:textColor="@color/textColor"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="|"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/textColor"
+                                    android:layout_marginLeft="8dp"
+                                    />
+
+                                <Space
+                                    android:layout_width="10dp"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" End Date: "
+                                    android:textSize="12sp"
+                                    android:drawableLeft="@drawable/ic_baseline_date_range_24"
+                                    android:textColor="@color/textColor"
+                                    android:textStyle="bold"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/edate"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="20 May "
+                                    android:ellipsize="marquee"
+                                    android:singleLine="true"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/textColor"
+                                    />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="5dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" Repeat Time: "
+                                    android:textSize="12sp"
+                                    android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/textColor"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/rtime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="3"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/textColor"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="|"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/textColor"
+                                    android:layout_marginLeft="8dp"
+                                    />
+
+                                <Space
+                                    android:layout_width="10dp"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                                    android:text=" Gape Time: "
+                                    android:textColor="@color/textColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/gtime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="6 Hours"
+                                    android:textSize="12sp"
+                                    android:ellipsize="marquee"
+                                    android:singleLine="true"
+                                    android:textColor="@color/textColor"
+                                    />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <!--<LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingRight="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"s
+                            android:layout_height="wrap_content"
+                            android:text="Disease ajhsk"
+                            android:ellipsize="marquee"
+                            android:singleLine="true"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorAccent"
+                            />
+
+                    </LinearLayout>-->
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+
+    </com.ramotion.foldingcell.FoldingCell>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

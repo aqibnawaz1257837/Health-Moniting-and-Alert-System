@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sfcwarriors.healthalert">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mainicon"
+        android:label="@string/app_name"
+
+        android:roundIcon="@drawable/mainicon"
+        android:supportsRtl="true"
+        tools:replace="android:appComponentFactory,android:icon"
+        android:appComponentFactory="someString"
+        android:theme="@style/Theme.HealthAlert">
+
+        <activity
+            android:name=".dashboard.EditeProfileActivty"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OtpVerifyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AlarmData.activity.AlarmActivity"></activity>
+
+<!--        <meta-data-->
+<!--            android:name="preloaded_fonts"-->
+<!--            android:resource="@array/preloaded_fonts" />-->
+        <receiver android:name=".AlarmData.broadcastReceiver.AlarmBroadcastReceiver"
+            android:enabled="false"
+            android:exported="true"
+            tools:ignore="MissingClass">
+
+        </receiver>
+
+        <service android:name=".AlarmData.broadcastReceiver.AlarmService"
+            android:enabled="true"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+        <receiver android:name="MyBroadcastReceiver" >
+        </receiver>
+    </application>
+
+</manifest>

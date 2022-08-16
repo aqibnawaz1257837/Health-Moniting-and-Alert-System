@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Nikal Yahan sy/HealthAlert/app/src/main/res/layout/activity_dashboard.xml" value="0.28888888888888886" />
+        <entry key="..\:/Nikal Yahan sy/HealthAlert/app/src/main/res/layout/activity_login.xml" value="0.28888888888888886" />
+        <entry key="..\:/Nikal Yahan sy/HealthAlert/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Nikal Yahan sy/HealthAlert/app/src/main/res/layout/activity_otp_verify.xml" value="0.28888888888888886" />
+        <entry key="..\:/Nikal Yahan sy/HealthAlert/app/src/main/res/layout/activity_register.xml" value="0.28888888888888886" />
+        <entry key="..\:/Nikal Yahan sy/HealthAlert/app/src/main/res/layout/fragment_text.xml" value="0.28888888888888886" />
+        <entry key="..\:/Nikal Yahan sy/HealthAlert/app/src/main/res/layout/item_option.xml" value="0.28888888888888886" />
+        <entry key="..\:/Nikal Yahan sy/HealthAlert/app/src/main/res/layout/menu_left_drawer.xml" value="0.28888888888888886" />
+        <entry key="..\:/Users/DEVELOPER/Desktop/Pakistan2/HealthAlert/app/src/main/res/drawable-hdpi/ic_clock_black.xml" value="0.1" />
+        <entry key="..\:/Users/DEVELOPER/Desktop/Pakistan2/HealthAlert/app/src/main/res/drawable-xxxhdpi/ic_arrow_forward.xml" value="0.1" />
+        <entry key="..\:/Users/DEVELOPER/Desktop/Pakistan2/HealthAlert/app/src/main/res/drawable/ic_emailed.xml" value="0.1" />
+        <entry key="..\:/Users/DEVELOPER/Desktop/Pakistan2/HealthAlert/app/src/main/res/drawable/ic_feedback.xml" value="0.1" />
+        <entry key="..\:/Users/DEVELOPER/Desktop/Pakistan2/HealthAlert/app/src/main/res/drawable/ic_forward.xml" value="0.1" />
+        <entry key="..\:/Users/DEVELOPER/Desktop/Pakistan2/HealthAlert/app/src/main/res/drawable/ic_help.xml" value="0.1" />
+        <entry key="..\:/Users/DEVELOPER/Desktop/Pakistan2/HealthAlert/app/src/main/res/drawable/ic_settings.xml" value="0.1" />
+        <entry key="..\:/Users/DEVELOPER/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/activity_main.xml" value="0.12048192771084337" />
+        <entry key="..\:/Users/DEVELOPER/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/appointment_folding_card.xml" value="0.18" />
+        <entry key="..\:/Users/DEVELOPER/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/case_history_form.xml" value="0.11121408711770157" />
+        <entry key="..\:/Users/DEVELOPER/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/casehistory_card.xml" value="0.11121408711770157" />
+        <entry key="..\:/Users/DEVELOPER/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/fragment_dashboard.xml" value="0.1" />
+        <entry key="..\:/Users/DEVELOPER/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/fragment_delete.xml" value="0.11121408711770157" />
+        <entry key="..\:/Users/DEVELOPER/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/fragment_edite_profile.xml" value="0.11121408711770157" />
+        <entry key="..\:/Users/DEVELOPER/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/fragment_feedback.xml" value="0.1" />
+        <entry key="..\:/Users/DEVELOPER/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/fragment_schedule.xml" value="0.1102873030583874" />
+        <entry key="..\:/Users/DEVELOPER/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/fragment_setting.xml" value="0.2" />
+        <entry key="..\:/Users/DEVELOPER/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/item_option.xml" value="0.1" />
+        <entry key="..\:/Users/DEVELOPER/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/menu_left_drawer.xml" value="0.1" />
+        <entry key="..\:/Users/DEVELOPER/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/schedule_bottom_sheet_form.xml" value="0.33" />
+        <entry key="..\:/Users/DEVELOPER/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/schedule_folding_card.xml" value="0.33" />
+        <entry key="..\:/Users/DEVELOPER/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/scheduler_card.xml" value="0.11121408711770157" />
+        <entry key="..\:/Users/DEVELOPER/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/test.xml" value="0.13160333642261354" />
+        <entry key="..\:/Users/admin/Desktop/HealthAlert/app/src/main/res/drawable/cursor.xml" value="0.1875" />
+        <entry key="..\:/Users/admin/Desktop/HealthAlert/app/src/main/res/drawable/ic_baseline_access_time_24.xml" value="0.176" />
+        <entry key="..\:/Users/admin/Desktop/HealthAlert/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.2895" />
+        <entry key="..\:/Users/admin/Desktop/HealthAlert/app/src/main/res/drawable/ic_baseline_date_range_24.xml" value="0.176" />
+        <entry key="..\:/Users/admin/Desktop/HealthAlert/app/src/main/res/drawable/ic_dot_24.xml" value="0.176" />
+        <entry key="..\:/Users/admin/Desktop/HealthAlert/app/src/main/res/drawable/ic_shedule.xml" value="0.168" />
+        <entry key="..\:/Users/admin/Desktop/HealthAlert/app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/admin/Desktop/HealthAlert/app/src/main/res/layout/activity_login.xml" value="0.37256719184430026" />
+        <entry key="..\:/Users/admin/Desktop/HealthAlert/app/src/main/res/layout/activity_main.xml" value="0.1040268456375839" />
+        <entry key="..\:/Users/admin/Desktop/HealthAlert/app/src/main/res/layout/activity_otp_verify.xml" value="0.2567191844300278" />
+        <entry key="..\:/Users/admin/Desktop/HealthAlert/app/src/main/res/layout/activity_register.xml" value="0.27575887131252674" />
+        <entry key="..\:/Users/admin/Desktop/HealthAlert/app/src/main/res/layout/appointment_bottom_sheet_form.xml" value="0.27575887131252674" />
+        <entry key="..\:/Users/admin/Desktop/HealthAlert/app/src/main/res/layout/fragment_appoinment.xml" value="0.27575887131252674" />
+        <entry key="..\:/Users/admin/Desktop/HealthAlert/app/src/main/res/layout/fragment_dashboard.xml" value="0.22" />
+        <entry key="..\:/Users/admin/Desktop/HealthAlert/app/src/main/res/layout/fragment_feedback.xml" value="0.129115006412997" />
+        <entry key="..\:/Users/admin/Desktop/HealthAlert/app/src/main/res/layout/fragment_schedule.xml" value="0.2567191844300278" />
+        <entry key="..\:/Users/admin/Desktop/HealthAlert/app/src/main/res/layout/fragment_text.xml" value="0.2567191844300278" />
+        <entry key="..\:/Users/admin/Desktop/HealthAlert/app/src/main/res/layout/fragment_vitals.xml" value="0.2567191844300278" />
+        <entry key="..\:/Users/admin/Desktop/HealthAlert/app/src/main/res/layout/menu_left_drawer.xml" value="0.1" />
+        <entry key="..\:/Users/admin/Desktop/HealthAlert/app/src/main/res/layout/new_test.xml" value="0.33" />
+        <entry key="..\:/Users/admin/Desktop/HealthAlert/app/src/main/res/layout/schedule_bottom_sheet_form.xml" value="0.274903805044891" />
+        <entry key="..\:/Users/admin/Desktop/HealthAlert/app/src/main/res/layout/scheduler_card.xml" value="0.5" />
+        <entry key="..\:/Users/admin/Desktop/HealthAlert/app/src/main/res/layout/test.xml" value="0.2713504417332772" />
+        <entry key="..\:/Users/admin/Desktop/HealthAlert/app/src/main/res/layout/visit_card.xml" value="0.33" />
+        <entry key="..\:/Users/admin/Desktop/HealthAlert/app/src/main/res/layout/vitals_bottom_sheet_form.xml" value="0.27575887131252674" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/drawable-mdpi/bg_btn.xml" value="0.114" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/drawable/cursor.xml" value="0.114" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/drawable/ic_delete.xml" value="0.1155" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/drawable/ic_search.xml" value="0.1715" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/drawable/linear_corner_radius.xml" value="0.21" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/activity_alarm.xml" value="0.27575887131252674" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/activity_dashboard.xml" value="0.27353313634444915" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/activity_edit_profile.xml" value="0.27191107310816587" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/activity_edite_profile_activty.xml" value="0.25" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/activity_login.xml" value="0.18999073215940684" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/activity_main.xml" value="0.27353313634444915" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/activity_otp_verify.xml" value="0.27353313634444915" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/activity_register.xml" value="0.27353313634444915" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/appointment_bottom_sheet_form.xml" value="0.27353313634444915" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/appointment_folding_card.xml" value="0.27353313634444915" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/case_history_form.xml" value="0.27575887131252674" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/casehistory_card.xml" value="0.27575887131252674" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/fragment_appoinment.xml" value="0.1927710843373494" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/fragment_dashboard.xml" value="0.27353313634444915" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/fragment_feedback.xml" value="0.27353313634444915" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/fragment_help.xml" value="0.27575887131252674" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/fragment_schedule.xml" value="0.27353313634444915" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/fragment_search.xml" value="0.27575887131252674" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/fragment_setting.xml" value="0.27575887131252674" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/fragment_vitals.xml" value="0.27353313634444915" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/item_option.xml" value="0.27575887131252674" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/menu_left_drawer.xml" value="0.27191107310816587" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/new_test.xml" value="0.33" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/schedule_bottom_sheet_form.xml" value="0.27353313634444915" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/schedule_folding_card.xml" value="0.27353313634444915" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/scheduler_card.xml" value="0.27353313634444915" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/test.xml" value="0.27353313634444915" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/visit_card.xml" value="0.27353313634444915" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/vitals_bottom_sheet_form.xml" value="0.27353313634444915" />
+        <entry key="..\:/Users/admin/Desktop/Pakistan2/HealthAlert/app/src/main/res/layout/vitals_folding_card.xml" value="0.2726888982693119" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

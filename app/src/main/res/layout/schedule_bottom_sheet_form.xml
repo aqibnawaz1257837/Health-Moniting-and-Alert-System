@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
+    android:background="@color/light_bg">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/schedule_button"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="ADD MEDICINE SCHEDULE"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:elevation="8dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:backgroundTint="@color/light_bg">
+
+            <LinearLayout
+                android:id="@+id/layoutReg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/layout_top"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select a Medicine Type *"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginBottom="-7dp"
+                        />
+
+                    <soup.neumorphism.NeumorphCardView
+                        style="@style/Widget.Neumorph.CardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        app:neumorph_shapeType="flat">
+
+                        <Spinner
+                            android:id="@+id/madicineCatSpin"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/no_bg"
+                            android:entries="@array/schedule_array"
+                            android:layout_margin="10dp"
+                            android:textAlignment="center"
+                            android:textCursorDrawable="@drawable/cursor" />
+
+
+                    </soup.neumorphism.NeumorphCardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enter a Medicine Name *"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginBottom="-7dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        />
+
+                    <soup.neumorphism.NeumorphCardView
+                        style="@style/Widget.Neumorph.CardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        app:neumorph_shapeType="pressed">
+
+                        <EditText
+                            android:id="@+id/medicineName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/no_bg"
+                            android:inputType="text"
+                            android:imeOptions="actionNext"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="10dp"
+                            android:textCursorDrawable="@drawable/cursor" />
+
+
+                    </soup.neumorphism.NeumorphCardView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select Start Date *"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginBottom="-7dp"
+                        />
+
+                    <soup.neumorphism.NeumorphCardView
+                        style="@style/Widget.Neumorph.CardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        app:neumorph_shapeType="pressed">
+
+                        <TextView
+                            android:id="@+id/sdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/no_bg"
+                            android:hint="00-00-0000"
+                            android:inputType="number"
+                            android:imeOptions="actionNext"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="10dp"
+                            android:layout_marginTop="10dp"
+                            android:textCursorDrawable="@drawable/cursor" />
+
+
+                    </soup.neumorphism.NeumorphCardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select End Date *"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginBottom="-7dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        />
+
+                    <soup.neumorphism.NeumorphCardView
+                        style="@style/Widget.Neumorph.CardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        app:neumorph_shapeType="pressed">
+
+                        <TextView
+                            android:id="@+id/edate"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/no_bg"
+                            android:hint="00-00-0000"
+                            android:inputType="number"
+                            android:imeOptions="actionNext"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="10dp"
+                            android:layout_marginTop="10dp"
+                            android:textCursorDrawable="@drawable/cursor" />
+
+
+                    </soup.neumorphism.NeumorphCardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enter Repetition Time *"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginBottom="-7dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        />
+                    <soup.neumorphism.NeumorphCardView
+                        style="@style/Widget.Neumorph.CardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        app:neumorph_shapeType="pressed">
+
+                        <EditText
+                            android:id="@+id/rtime"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/no_bg"
+                            android:hint="00:00"
+                            android:inputType="number"
+                            android:imeOptions="actionNext"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="10dp"
+                            android:textCursorDrawable="@drawable/cursor" />
+
+
+                    </soup.neumorphism.NeumorphCardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enter Gape b/w Repetition Time *"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginBottom="-7dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        />
+                    <soup.neumorphism.NeumorphCardView
+                        style="@style/Widget.Neumorph.CardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        app:neumorph_shapeType="pressed">
+
+                        <EditText
+                            android:id="@+id/gapetime"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/no_bg"
+                            android:hint="00:00"
+                            android:inputType="number"
+                            android:imeOptions="actionNext"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="10dp"
+                            android:textCursorDrawable="@drawable/cursor" />
+
+                    </soup.neumorphism.NeumorphCardView>
+
+                </LinearLayout>
+
+
+                <soup.neumorphism.NeumorphButton
+                    android:id="@+id/addSchedule"
+                    style="@style/Widget.Neumorph.Button"
+                    android:layout_width="200dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="ADD"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp">
+
+                </soup.neumorphism.NeumorphButton>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+</LinearLayout>

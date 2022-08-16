@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.DashboardFragment">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+    <!--appoiments-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upcoming Visits Reminders"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
+            />
+
+        <!-- viewpager to show images -->
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="200dp">
+
+          <androidx.viewpager.widget.ViewPager
+              android:id="@+id/viewPagerMain"
+              android:layout_width="match_parent"
+              android:layout_height="200dp"
+              android:layout_marginTop="10dp"/>
+
+          <com.airbnb.lottie.LottieAnimationView
+              android:id="@+id/apdLotie"
+              android:layout_width="match_parent"
+              android:layout_height="200dp"
+              android:elevation="40dp"
+              android:visibility="gone"
+              app:lottie_loop="true"
+              app:lottie_autoPlay="true"
+              app:lottie_rawRes="@raw/appointment" />
+      </RelativeLayout>
+    </LinearLayout>
+
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"/>
+
+    <!--chart-->
+    <TextView
+        android:id="@+id/mtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Health Record"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:textColor="@color/textColor"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:elevation="1dp"
+
+        android:clipChildren="false"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="2dp"
+        app:contentPadding="1dp"
+        >
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Last Week Record"
+              android:textSize="18sp"
+              android:textStyle="bold"
+              android:layout_margin="10dp"
+              android:textColor="@color/textColor"
+              />
+          <com.github.mikephil.charting.charts.BarChart
+              android:id="@+id/fragment_groupedbarchart_chart"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" />
+      </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!--appoiments-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Schedule Dosage"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
+            />
+
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <!-- viewpager to show images -->
+         <androidx.recyclerview.widget.RecyclerView
+             android:id="@+id/schedulerCard"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp" />
+         <com.airbnb.lottie.LottieAnimationView
+             android:id="@+id/schdLotie"
+             android:layout_width="match_parent"
+             android:layout_height="200dp"
+             android:elevation="40dp"
+             app:lottie_loop="true"
+             android:visibility="gone"
+             app:lottie_autoPlay="true"
+             app:lottie_rawRes="@raw/splash_animation" />
+     </RelativeLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+</ScrollView>

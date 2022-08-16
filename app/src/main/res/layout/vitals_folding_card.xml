@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="15dp"
+    android:layout_height="wrap_content"
+    android:clickable="false">
+
+    <com.ramotion.foldingcell.FoldingCell
+        android:id="@+id/vitals_folding_cell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:clipChildren="false">
+
+        <FrameLayout
+            android:id="@+id/cell_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:elevation="5dp"
+            android:visibility="gone">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:src="@drawable/vitals_bg"
+                                android:scaleType="fitXY"
+                                />
+
+
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="10dp"
+                                android:layout_marginTop="10dp"
+                                >
+
+                                <TextView
+                                    android:id="@+id/vcat1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Blood Pressure"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <!--<TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:drawableLeft="@drawable/ic_dot_24"
+                                    android:ellipsize="marquee"
+                                    android:singleLine="true"
+                                    android:text=" Disease "
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />-->
+                            </RelativeLayout>
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=" Value: "
+                                        android:textStyle="bold"
+                                        android:textSize="14sp"
+                                        android:drawableLeft="@drawable/ic_dot_24"
+                                        android:textColor="@color/textColor"
+                                        />
+                                    <TextView
+                                        android:id="@+id/vvalue1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="120/80mmHg"
+                                        android:textSize="14sp"
+                                        android:textColor="@color/black"
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=" Date: "
+                                        android:textStyle="bold"
+                                        android:textSize="14sp"
+                                        android:drawableLeft="@drawable/ic_baseline_date_range_24"
+                                        android:textColor="@color/textColor"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/vdate1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="10-May-2022"
+                                        android:textSize="14sp"
+                                        android:textColor="@color/black"
+                                        />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="|"
+                                        android:textStyle="bold"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=" Time: "
+                                        android:textStyle="bold"
+                                        android:textSize="14sp"
+                                        android:ellipsize="marquee"
+                                        android:singleLine="true"
+                                        android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                                        android:textColor="@color/textColor"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/vtime1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="06:00 PM"
+                                        android:textSize="14sp"
+                                        android:textColor="@color/black"
+                                        android:ellipsize="marquee"
+                                        android:singleLine="true"
+                                        />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/vdesc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/vital_des"
+                                    android:textSize="14sp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:textColor="#7B7B7B"
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:gravity="end"
+                                    android:layout_marginRight="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/editeVital"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_edit"
+                                        android:layout_marginRight="20dp"/>
+
+                                    <ImageView
+                                        android:id="@+id/deletevital"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_delete"/>
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/cell_title_view"
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="100dp"
+            android:elevation="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:paddingLeft="10dp"
+                        android:orientation="horizontal"
+                        >
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="10dp"
+                            >
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/vitals"
+                                />
+
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/vcat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Blood Pressure"
+                                android:textStyle="bold"
+                                android:textSize="18sp"
+                                android:textColor="@color/black"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" Value: "
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:drawableLeft="@drawable/ic_baseline_date_range_24"
+                                    android:textColor="@color/textColor"
+                                    />
+                                <TextView
+                                    android:id="@+id/vvalue"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="120/80mmHg"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" Date: "
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:drawableLeft="@drawable/ic_baseline_date_range_24"
+                                    android:textColor="@color/textColor"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/vdate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="10-May-2022"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/black"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="|"
+                                    android:textStyle="bold"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" Time: "
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:ellipsize="marquee"
+                                    android:singleLine="true"
+                                    android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                                    android:textColor="@color/textColor"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/vtime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="06:00 PM"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/black"
+                                    android:ellipsize="marquee"
+                                    android:singleLine="true"
+                                    />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <!--<LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingRight="10dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Disease ajhsk"
+                            android:ellipsize="marquee"
+                            android:singleLine="true"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorAccent"
+                            />
+
+                    </LinearLayout>-->
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+
+    </com.ramotion.foldingcell.FoldingCell>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

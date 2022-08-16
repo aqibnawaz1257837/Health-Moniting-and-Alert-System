@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "287561731474",
+    "firebase_url": "https://healthalert-c312f-default-rtdb.firebaseio.com",
+    "project_id": "healthalert-c312f",
+    "storage_bucket": "healthalert-c312f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287561731474:android:5fd869de01cd3c559c454b",
+        "android_client_info": {
+          "package_name": "com.sfcwarriors.healthalert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "287561731474-segcn8am2bo80kk01sr0b606l15p0stk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpIyf1AdtkH_BoxK0v38bqBAtY3gvlpGE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "287561731474-segcn8am2bo80kk01sr0b606l15p0stk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

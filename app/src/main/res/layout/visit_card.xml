@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:clipChildren="false"
+    >
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="5dp"
+    android:elevation="5dp"
+    android:backgroundTint="@color/colorAccent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:padding="14dp"
+        android:layout_marginTop="5dp"
+        >
+        <!--row1-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/doctor" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <Space
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/vdrname"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="Dr Murtaza "
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/vdease"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="Fever Testing . Online Visit"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_alarm"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_appoinment"
+                android:backgroundTint="@color/grey"
+                />
+            <TextView
+                android:id="@+id/vdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" In 2 Days"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                />
+
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_shedule"
+                android:backgroundTint="@color/grey"
+                />
+            <TextView
+                android:id="@+id/vtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 9:30 PM"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                >
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/vedit"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    app:cornerRadius="20dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/textColor"
+                    android:textSize="12sp"
+                    android:text="Reschedule"/>
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/vdel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    app:cornerRadius="20dp"
+                    android:textSize="12sp"
+                    android:backgroundTint="@color/white"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:text="Delete"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+</LinearLayout>
